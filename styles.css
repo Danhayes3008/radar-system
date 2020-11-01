@@ -1,1 +1,6 @@
 /*  styles for the radar page */
+
+canvas{
+    border-radius: 50%;
+    background-color: green;
+}
