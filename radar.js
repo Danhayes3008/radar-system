@@ -69,3 +69,9 @@ c.arc(100, 235, 5, 0, 2 * Math.PI);
 c.fillStyle = "red";
 c.fill();
 c.stroke();
+
+// radar scan line
+c.beginPath();
+c.moveTo(150, 150);
+c.lineTo(300, 300);
+c.stroke();
