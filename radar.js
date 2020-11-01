@@ -71,7 +71,11 @@ c.fill();
 c.stroke();
 
 // radar scan line
+var scanStartX = 150;
+var scanStartY = 150;
+var scanEndX = 0;
+var scanEndY = 150;
 c.beginPath();
-c.moveTo(150, 150);
-c.lineTo(300, 300);
+c.moveTo(scanStartY, scanStartX);
+c.lineTo(scanEndY, scanEndX);
 c.stroke();
