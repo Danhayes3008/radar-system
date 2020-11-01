@@ -50,3 +50,22 @@ c.arc(150, 150, 5, 0, 2 * Math.PI);
 c.fillStyle = "blue";
 c.fill();
 c.stroke();
+
+// enemy location markers
+c.beginPath();
+c.arc(100, 255, 5, 0, 2 * Math.PI);
+c.fillStyle = "red";
+c.fill();
+c.stroke();
+
+c.beginPath();
+c.arc(80, 235, 5, 0, 2 * Math.PI);
+c.fillStyle = "red";
+c.fill();
+c.stroke();
+
+c.beginPath();
+c.arc(100, 235, 5, 0, 2 * Math.PI);
+c.fillStyle = "red";
+c.fill();
+c.stroke();
