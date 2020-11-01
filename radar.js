@@ -43,3 +43,10 @@ c.beginPath();
 // 130km distance
 c.arc(150, 150, 130, 0, 2 * Math.PI);
 c.stroke();
+
+// base lacation mrker
+c.beginPath();
+c.arc(150, 150, 5, 0, 2 * Math.PI);
+c.fillStyle = "blue";
+c.fill();
+c.stroke();
