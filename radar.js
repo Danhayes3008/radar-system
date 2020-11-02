@@ -19,6 +19,7 @@ function animate() {
     c.fillRect(0, 0, canvas.width, canvas.height);
 
     c.beginPath();
+    c.fillStyle = 'rgba(0, 0, 0, 0.1)'
     c.moveTo(scanStartY, scanStartX);
     c.lineTo(scanEndY, scanEndX);
 
