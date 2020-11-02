@@ -7,7 +7,37 @@ canvas.height = 300;
 
 var c = canvas.getContext("2d");
 
-// sets the horizontal and virtical lines of the radar
+// radar scan line
+var scanStartX = 150;
+var scanStartY = 150;
+var scanEndX = 0;
+var scanEndY = 150;
+
+function animate() {
+    requestAnimationFrame(animate);
+    c.clearRect(0, 0, canvas.width, canvas.height);
+
+    c.beginPath();
+    c.moveTo(scanStartY, scanStartX);
+    c.lineTo(scanEndY, scanEndX);
+
+    c.stroke();
+    console.log(scanEndX);
+    if (scanEndX == 0 && scanEndY < 300) {
+        scanEndY += 1;
+    } else if (scanEndY == 300 && scanEndX < 300){
+        scanEndX += 1;
+    }
+    else if (scanEndY > 0 && scanEndX == 300){
+        scanEndY -= 1;
+    }
+    else if (scanEndX > 0 && scanEndY == 0){
+        scanEndX -= 1;
+    }
+
+
+
+    // sets the horizontal and virtical lines of the radar
 c.beginPath();
 c.moveTo(150, 0);
 c.lineTo(150, 300);
@@ -69,13 +99,5 @@ c.arc(100, 235, 5, 0, 2 * Math.PI);
 c.fillStyle = "red";
 c.fill();
 c.stroke();
-
-// radar scan line
-var scanStartX = 150;
-var scanStartY = 150;
-var scanEndX = 0;
-var scanEndY = 150;
-c.beginPath();
-c.moveTo(scanStartY, scanStartX);
-c.lineTo(scanEndY, scanEndX);
-c.stroke();
+}
+animate();
