@@ -15,9 +15,11 @@ var scanEndY = 150;
 
 function animate() {
     requestAnimationFrame(animate);
-    c.clearRect(0, 0, canvas.width, canvas.height);
+    c.fillStyle = 'rgba(0, 98, 0, 0.05)'
+    c.fillRect(0, 0, canvas.width, canvas.height);
 
     c.beginPath();
+    c.fillStyle = 'rgba(0, 0, 0, 0.1)'
     c.moveTo(scanStartY, scanStartX);
     c.lineTo(scanEndY, scanEndX);
 
