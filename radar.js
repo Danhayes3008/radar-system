@@ -98,7 +98,7 @@ c.stroke();
 
 c.beginPath();
 c.arc(100, 235, 5, 0, 2 * Math.PI);
-c.fillStyle = "red";
+c.fillStyle = "rgba(255, 26, 26, 0.5)";
 c.fill();
 c.stroke();
 }
