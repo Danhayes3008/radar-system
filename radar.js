@@ -1,6 +1,6 @@
 // radar system backend
 
-var canvas = document.querySelector("canvas");
+var canvas = document.getElementById("radar");
 
 canvas.width = 300;
 canvas.height = 300;
