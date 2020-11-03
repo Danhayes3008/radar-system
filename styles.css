@@ -1,6 +1,19 @@
 /*  styles for the radar page */
+body{
+    background-color: rgb(38, 38, 38);
+}
 
-canvas{
+#radar{
+    margin: 6%;
+    border: solid 6px #4a4a4a;
     border-radius: 50%;
     background-color: green;
+}
+.radar{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    top: 220px;
+    left: 750px;
+    background-color: #a7a7a7;
 }
