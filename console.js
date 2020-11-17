@@ -7,15 +7,10 @@ window.setInterval(
     function () {
         if (engineOverHeat < 100) {
             engineOverHeat++;
-            document.getElementById("speed").style.color = "white";
+            document.getElementById("temperature").style.color = "green";
         }
-        if (engineOverHeat > 75) {
-            document.getElementById("speed").style.color = "red";
-        }
-        document.getElementById("speed").innerHTML = engineOverHeat + " kph";
+        // if (engineOverHeat > 75) {
+        //     document.getElementById("temperature").style.color = "red";
+        // }
+        document.getElementById("temperature").innerHTML = engineOverHeat + " Degrees";
     }, 1000);
-
-console.log(engineOverHeat);
-if (warning > 75) {
-    document.getElementById("speed").style.color="red !important";
-}
