@@ -7,8 +7,15 @@ window.setInterval(
     function () {
         if (engineOverHeat < 100) {
             engineOverHeat++;
+            document.getElementById("speed").style.color = "white";
+        }
+        if (engineOverHeat > 75) {
+            document.getElementById("speed").style.color = "red";
         }
         document.getElementById("speed").innerHTML = engineOverHeat + " kph";
     }, 1000);
 
 console.log(engineOverHeat);
+if (warning > 75) {
+    document.getElementById("speed").style.color="red !important";
+}
