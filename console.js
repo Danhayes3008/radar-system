@@ -1,4 +1,4 @@
-let speed = 258;
+let speed;
 let engineOutput = 100;
 let engineOverHeat = 70;
 let maxTemp = 100;
@@ -14,3 +14,12 @@ window.setInterval(
         }
         document.getElementById("temperature").innerHTML = engineOverHeat + " Degrees";
     }, 1000);
+
+function Speed() {
+    if (engineOutput == 100) {
+        speed = 258;
+        }
+    document.getElementById("speed").innerHTML = speed + " kph";
+    document.getElementById("speed").style.color = "green";
+}
+Speed();
