@@ -3,6 +3,7 @@ let engineOutput = 100;
 let engineOverHeat = 70;
 let maxTemp = 100;
 
+// Engine over heat system
 window.setInterval(
     function () {
         if (engineOverHeat < 100) {
@@ -15,6 +16,7 @@ window.setInterval(
         document.getElementById("temperature").innerHTML = engineOverHeat + " Degrees";
     }, 1000);
 
+// Speed managment system
 function Speed() {
     if (engineOutput == 100) {
         speed = 258;
