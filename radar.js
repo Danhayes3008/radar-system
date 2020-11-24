@@ -24,7 +24,7 @@ function animate() {
     c.lineTo(scanEndY, scanEndX);
 
     c.stroke();
-    console.log(scanEndX);
+    // console.log(scanEndX);
     if (scanEndX == 0 && scanEndY < 300) {
         scanEndY += 1;
     } else if (scanEndY == 300 && scanEndX < 300){
