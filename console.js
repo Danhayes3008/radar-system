@@ -9,8 +9,8 @@ window.setInterval(
             engineOverHeat++;
             document.getElementById("temperature").style.color = "green";
         }
-        // if (engineOverHeat > 75) {
-        //     document.getElementById("temperature").style.color = "red";
-        // }
+        if (engineOverHeat > 75) {
+            document.getElementById("temperature").style.color = "red";
+        }
         document.getElementById("temperature").innerHTML = engineOverHeat + " Degrees";
     }, 1000);
