@@ -2,9 +2,8 @@ let speed;
 let engineOutput = 100;
 let engineOverHeat = 70;
 let maxTemp = 100;
-let coolent = 200.75;
-coolent.toFixed(2);
-let maxCooolent = 200;
+let coolent = 200759;
+let maxCooolent = 200759;
 
 // Engine over heat system
 window.setInterval(
@@ -31,13 +30,12 @@ Speed();
 
 // coolent readout
 function Coolent() {
-let usage = 0.01;
     window.setInterval(
 
         function () {
             while(engineOverHeat > 75) {
-                engineOverHeat--;
-                coolent - usage;
+                engineOverHeat -= 10;
+                coolent -=1;
             }
             document.getElementById("coolent").innerHTML = coolent + " / " + maxCooolent;
             document.getElementById("coolent").style.color = "green";
