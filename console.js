@@ -35,7 +35,9 @@ function Coolent() {
             if(currentvalue == "On") {
                 engineOverHeat -= 10;
                 coolent -= 1;
-                document.getElementById("clnt").style.color = "green";
+                document.getElementById("clnt").style.backgroundColor = "green";
+            } else {
+                document.getElementById("clnt").style.backgroundColor = "red";
             }
             document.getElementById("coolent").innerHTML = coolent + " / " + maxCooolent;
             document.getElementById("coolent").style.color = "green";
