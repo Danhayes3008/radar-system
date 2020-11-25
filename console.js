@@ -11,6 +11,7 @@ window.setInterval(
         if (engineOverHeat < 100) {
             engineOverHeat++;
             document.getElementById("temperature").style.color = "green";
+
         }
         if (engineOverHeat > 75) {
             document.getElementById("temperature").style.color = "red";
@@ -44,3 +45,14 @@ function Coolent() {
 
 }
 Coolent();
+
+// buttons
+function addCoolent() {
+    currentvalue = document.getElementById('clnt').value;
+    if (currentvalue == "Off") {
+        document.getElementById("clnt").value = "On";
+    } else {
+        document.getElementById("clnt").value = "Off";
+    }
+}
+addCoolent();
